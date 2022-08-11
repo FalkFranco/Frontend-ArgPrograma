@@ -22,6 +22,7 @@
     text-align: center;
     font-size: 4rem;
     font-weight: 800;
+    line-height: 5rem;
 }
 .contenido-hero .dev-text{
     font-family: var(--fuente_secundaria);
@@ -36,12 +37,15 @@
     @media(min-width:768px){  
         .contenido-hero p{  
             font-size: 7.2rem;
-            line-height: 100px;
+            line-height: 10rem;
         }
         .contenido-hero .dev-text{
             letter-spacing: 0.5rem;
             font-size: 2rem;
             font-weight: 500;
+        }
+        .top{
+            margin-top: -6rem;
         }
 
 }

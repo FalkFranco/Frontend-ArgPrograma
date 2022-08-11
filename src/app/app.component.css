@@ -39,7 +39,11 @@
 .nav-link{
     color: var(--grey);
     font-weight: 700;
+    font-family: 'Leelawadee';
+    font-size: 1.6rem;
+    cursor: pointer;
 }
+
 .nav-link:hover{
     color: var(--primary);
 }

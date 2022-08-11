@@ -37,6 +37,7 @@ import { DetalleProyectoComponent } from './portfolio/proyectos/detalle-proyecto
 import { HeaderComponent } from './portfolio/header/header.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
