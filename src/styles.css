@@ -1,3 +1,98 @@
+/* Fonts */
+@font-face {
+    font-family: Leelawadee;
+    src: url('../src/assets/fonts/LEELAWAD.TTF'),   
+         url('../src/assets/fonts/LEELAWDB.TTF');
+}
+         
+@font-face {
+    font-family: Silka;
+    src: url('../src/assets/fonts/silka-regular-webfont.ttf');
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root 
+{
+    --pricipal: #0A192F;
+    --grey: #545454;
+    --aquamarine: #60C2A5;
+    --gold: #B28550;
+    --gold-dark: #9C6C3D;
+    --bs-primary: #B28550;
+
+    --fuente_principal:'Leelawadee', sans-serif;
+    --fuente_secundaria:'Silka', sans-serif;
+
+    --ani-speed: 2s;
+    --ani-delay: 1s;
+
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-family: 'Leelawadee';
+    background-color: #141414;
+    user-select: none; 
+}
+p {
+    
+    font-size:2rem;
+    margin:0;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: var(--fuente_principal);
+    margin: 5rem / 2 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    text-align: center;
+    
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+
+li{
+    list-style: none;
+}
+

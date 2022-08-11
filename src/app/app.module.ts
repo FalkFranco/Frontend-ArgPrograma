@@ -34,6 +34,8 @@ import { AgregarProyectoComponent } from './portfolio/proyectos/agregar-proyecto
 import { EditarProyectoComponent } from './portfolio/proyectos/editar-proyecto/editar-proyecto.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DetalleProyectoComponent } from './portfolio/proyectos/detalle-proyecto/detalle-proyecto.component';
+import { HeaderComponent } from './portfolio/header/header.component';
+
 
 @NgModule({
   declarations: [
@@ -60,6 +62,7 @@ import { DetalleProyectoComponent } from './portfolio/proyectos/detalle-proyecto
     AgregarProyectoComponent,
     EditarProyectoComponent,
     DetalleProyectoComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

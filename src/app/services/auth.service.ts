@@ -13,7 +13,7 @@ const cabecera = {
   providedIn: 'root',
 })
 export class AuthService {
-  private authURL = 'https://backend-arg-programa-falkfranc.herokuapp.com/';
+  private authURL = 'https://backend-arg-programa-falkfranc.herokuapp.com/api/auth/';
 
   constructor(private httpClient: HttpClient) {}
 

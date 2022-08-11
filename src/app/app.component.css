@@ -1,0 +1,56 @@
+.arg-p, 
+.social{
+   display: none;
+}
+
+@media(min-width: 1024px){
+    .arg-p,
+    .social{
+        display: block;
+        font-size: 1.8rem;
+    }
+}
+.logo-ff {
+    display: none;
+    z-index: 1;
+}
+ 
+.logo{
+    height: 4rem;
+    width: 14rem;
+    margin-left: 2rem;
+}
+
+@media (min-width: 1024px){
+    .logo-ff {
+        display: block;
+        position: fixed;
+        left: 49.5%;
+        top: 2rem;
+    }
+    .logo-ff img{
+        width: 5rem;
+        height: 100%;
+        
+    }
+}
+
+
+.nav-link{
+    color: var(--grey);
+    font-weight: 700;
+}
+.nav-link:hover{
+    color: var(--primary);
+}
+.nav-item:hover{
+    color: var(--primary);
+}
+.b-n{
+    border:none;
+    box-shadow: none;
+}
+
+.nav_bar{
+    background-color: var(--primary);
+}

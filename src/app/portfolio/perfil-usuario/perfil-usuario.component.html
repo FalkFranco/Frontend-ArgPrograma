@@ -1,18 +1,22 @@
 <div class="container-fluid mat-typography" *ngIf="cargado">
   <div class="row" id="inicio">
     <div class="col-md-12">
-      <div class="row">
+      <div class="hero">
+        
+      
+      <!-- <div class="row">
         <div class="col-md-12" id="imgcover" style="background-image:url({{miPerfilUsuario.portadaUrl}});"></div>
-      </div>
-      <div class="row">
-        <div class="col-md-3" id="areaperfil">
-          <img alt="Foto de perfil" src="{{ miPerfilUsuario?.imgUrl }}" class="img-fluid" id="profpic" />
-
-          <h2 class="mat-h2">{{ miPerfilUsuario?.nombre }}</h2>
-
-          <h4 class="mat-h4">{{ miPerfilUsuario?.cargo }}</h4>
+      </div> -->
+          <div class="contenido-hero" >
+          
+            <!-- <img alt="Foto de perfil" src="{{ miPerfilUsuario?.imgUrl }}" class="img-fluid" id="profpic" /> -->
+            <p> <span class="dev-text">{{ miPerfilUsuario?.cargo }}</span> </p>
+            <p>Hi, Im <span class="welcome-text">{{ miPerfilUsuario?.nombre }}</span></p>
+            <p>Welcome to my Portfolio</p>
+          </div>
+          
         </div>
-        <div class="col-md-9 py-3">
+        <div class=" py-3">
           <div class="row">
             <div class="col-md-8 py-1">
               <h2>Hola! Bienvenidos a mi portfolio web!</h2>
@@ -29,7 +33,6 @@
             {{ miPerfilUsuario?.intro }}
           </p>
         </div>
-      </div>
+    </div>
     </div>
   </div>
-</div>
