@@ -1,0 +1,79 @@
+.contacto{
+    width: 100%;
+    height: 35rem;
+    background-image: url('https://res.cloudinary.com/drbu4rlif/image/upload/v1660156078/Portfolio/contacto-bg_hesctq.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto-text{
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 2rem;
+    display: flex;
+}
+@media (min-width: 768px) {
+    .contacto-text{
+        font-size: 2rem;
+    }
+}
+
+
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 2rem;
+    gap: 1rem;
+}
+@media (min-width: 768px) {
+    .botones{
+        gap: 2rem;
+    }
+} 
+ 
+.btn-contacto{
+    background-color: var(--gold);
+    position: relative;
+    color: white;
+    transition: all .3s ease-in-out;
+    transition: all .6s cubic-bezier(.165,.85,.45,1);
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    border: 2px solid var(--gold);
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 2rem;   
+}
+@media (min-width: 768px) {
+    .btn-contacto{
+        font-size: 1.5rem;
+        padding: 1em 2.5em;
+    }
+}   
+
+.btn-contacto:hover{
+    background-color: var(--gold-dark);
+    color: white;
+    border: 2px solid var(--gold-dark);
+}
+
+.btn-contacto:last-of-type{
+    background-color: transparent;
+    color: var(--gold);
+}
+.btn-contacto:last-of-type:hover{
+    background-color: var(--gold-dark);
+    color: white;
+}
+
+

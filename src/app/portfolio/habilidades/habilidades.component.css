@@ -194,3 +194,181 @@ body {
   background: #3498db;
   transform: rotate(43.2deg);
 }
+
+
+/* Skills */
+
+.skills{
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+}
+.skills .title-skill{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;  
+  } 
+
+.list li{
+    list-style: none;
+    margin-bottom: 1rem;
+    margin:0rem 0rem 1rem 4rem;
+    color: #b4b5b8;
+}
+
+@media (min-width: 768px) {
+  .list li{
+        margin-bottom: 2.5rem;
+    }
+}
+
+
+.ul_emphasis .title-skill::before {
+  content: "•";
+  font-size: 3rem;
+  color: var(--gold);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.cont-images{
+  position: relative;
+}
+
+.cont-image{
+  position: relative;
+  margin: 0 auto;
+   /* background-color: red; */
+  width: 25rem;
+  height: 40rem;
+  border-radius: 3rem;
+  box-shadow:  0 0 0.5rem 0.5rem rgba(0,0,0,0.5);
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .cont-image {
+        width: 35rem;
+        height: 45rem;
+    }
+}
+
+@media (min-width: 1080px) {
+  .cont-image {
+        position: relative;
+        width: 30rem;
+        height: 45rem;
+    }
+}
+@media (min-width: 1400px) {
+  .cont-image {
+        position: absolute;
+        width: 35rem;
+        height: 50rem;
+    }
+}
+
+
+.cont-image:first-child{
+  background-image: url('https://res.cloudinary.com/drbu4rlif/image/upload/v1660156079/Portfolio/skills-1_bvfdm9.jpg');
+  top: 16rem;
+  left: 5rem;
+}
+.cont-image:nth-child(2){
+  background-image: url('https://res.cloudinary.com/drbu4rlif/image/upload/v1660156080/Portfolio/skills-2_h21xfk.jpg');
+  top: -7rem;
+  left: -5rem;
+  z-index: 1;
+}
+.points{
+  position: absolute;
+  background-image: url('https://res.cloudinary.com/drbu4rlif/image/upload/v1660156075/Portfolio/points_qt18gg.png');
+  background-repeat: no-repeat;
+  width: 7rem;
+  height: 7rem;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+  top: 25rem;
+  left: 4rem;
+  transform: rotate(90deg);
+}
+  
+
+@media (min-width: 768px) {
+  .cont-image:first-child{
+      top: 0rem;
+      left: 10rem;
+      order: 1;
+  }
+  .cont-image:nth-child(2){
+      top: -24rem;
+      left: -9rem;
+      z-index: 1;
+      order: 2;
+  }
+  .points{
+      width: 17rem;
+      height: 17rem;
+      top: 47rem;
+      left: 46rem;
+      transform: rotate(270deg);
+  }
+}
+@media (min-width: 992px) {
+  .points{ 
+      left: 58rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .cont-image:first-child{
+      top: 2rem;
+      left: 15rem;
+  }
+  .cont-image:nth-child(2){
+      top: -19rem;
+      left: -2rem;
+      z-index: 1;
+  }
+  .points{
+      width: 18rem;
+      height: 18rem;
+      top: 49rem;
+      left: 62rem;
+      
+  }
+}
+@media (min-width: 1200px) {
+  .cont-image:first-child{
+      left: 7rem;
+  }
+  .cont-image:nth-child(2){
+      left: -10rem;
+  }
+  .points{
+      width: 15rem;
+      height: 15rem;
+      left: 30rem;
+      
+  }  
+}
+
+@media (min-width: 1400px) {
+  .cont-image:first-child{
+      top: 27rem;
+      left: -6px;
+  }
+  .cont-image:nth-child(2){
+      top: 18px;
+      left: -28rem;
+  }
+  .points{
+      width: 20rem;
+      height: 20rem;
+      top: 53rem;
+      left: -22rem;
+      transform: rotate(0deg);
+  }
+}

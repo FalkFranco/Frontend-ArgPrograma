@@ -1,9 +1,10 @@
-<div class="container-fluid mat-typography" id="experiencia">
+<section *ngIf="miExperiencia.length > 0"  class="container-fluid mat-typography bg-light" id="experiencia">
   <div class="">
-    <span id="seccion">
+    <!-- <span id="seccion">
       <hr>
-    </span>
-
+    </span> -->
+    {{console.log(miExperiencia.length)}}
+    
     <div class="row" *ngIf="!authority">
       <h2 class="mat-h2 float-start">Mi Experiencia</h2>
       <div>
@@ -50,6 +51,7 @@
       <ul cdkDropList class="lista-droppeable" (cdkDropListDropped)="drop($event)">
         <li class=" tarjeta row  caja-droppeable py-3 my-4" *ngFor="let elemento of miExperiencia" cdkDragLockAxis="y"
           cdkDrag>
+          
           <div class="lista-handler">
             <i class="fa-2 fa-solid fa-bars"></i>
           </div>
@@ -79,10 +81,12 @@
             </div>
             <h3 class="mat-h3">{{ elemento.empresa }}</h3>
             <p>{{ elemento.descripcion }}</p>
+            
           </div>
         </li>
       </ul>
     </div>
+    
 
   </div>
-</div>
+</section>

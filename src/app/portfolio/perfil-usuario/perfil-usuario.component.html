@@ -1,38 +1,22 @@
 <div class="container-fluid mat-typography" *ngIf="cargado">
   <div class="row" id="inicio">
-    <div class="col-md-12 top">
-      <div class="hero">
-        
-      
+    <div class="hero">
       <!-- <div class="row">
         <div class="col-md-12" id="imgcover" style="background-image:url({{miPerfilUsuario.portadaUrl}});"></div>
       </div> -->
-          <div class="contenido-hero" >
-          
-            <!-- <img alt="Foto de perfil" src="{{ miPerfilUsuario?.imgUrl }}" class="img-fluid" id="profpic" /> -->
-            <p> <span class="dev-text">{{ miPerfilUsuario?.cargo }}</span> </p>
-            <p>Hi, Im <span class="welcome-text">{{ miPerfilUsuario?.nombre }}</span></p>
-            <p>Welcome to my Portfolio</p>
-          </div>
-          
-        </div>
-        <div class=" py-3">
-          <div class="row">
-            <div class="col-md-8 py-1">
-              <h2>Hola! Bienvenidos a mi portfolio web!</h2>
-            </div>
-
-            <div *ngIf="authority === 'admin'" class="col-md-4 py-1 float-end">
-              <a (click)="openEditFormModal(miPerfilUsuario.id)">
-                <i class="float-end btn btn-success mx-2 fa-solid fa-pen-to-square"></i>
-              </a>
-            </div>
-          </div>
-
-          <p class="text-muted text-justify mr-4" style="line-height: 1.5em">
-            {{ miPerfilUsuario?.intro }}
-          </p>
-        </div>
-    </div>
+      <div class="contenido-hero" >
+        <!-- <img alt="Foto de perfil" src="{{ miPerfilUsuario?.imgUrl }}" class="img-fluid" id="profpic" /> -->
+        <p> <span class="dev-text">{{ miPerfilUsuario?.cargo }}</span> </p>
+        <p>Hi, Im <span class="welcome-text">{{ miPerfilUsuario?.nombre }}</span></p>
+        <p>Welcome to my Portfolio</p>
+      </div>
+      <div *ngIf="authority === 'admin'" class="col-md-8 py-1 float-end btn-editar">
+        <a (click)="openEditFormModal(miPerfilUsuario.id)">
+          <i class="float-end btn btn-success mx-2 fa-solid fa-pen-to-square"></i>
+        </a>
+      </div>
     </div>
   </div>
+</div>
+
+<app-about-me [aboutMe]="miPerfilUsuario?.intro" ></app-about-me>

@@ -65,10 +65,10 @@ object-fit: cover;
   background-size: cover;
   margin: 0px;
 }
-body {
+/* body {
   padding-top: 56px;
   background-color: #f7f8fa;
-}
+} */
 
 #profpic {
   max-width: 200px;

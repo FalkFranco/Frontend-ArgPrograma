@@ -37,11 +37,10 @@ html {
     box-sizing: inherit;
 }
 body {
-    
     font-size: 1.6rem;
     line-height: 1.8;
     font-family: 'Leelawadee';
-    background-color: #141414;
+    background-color: #141414 !important;
     user-select: none; 
 }
 p {

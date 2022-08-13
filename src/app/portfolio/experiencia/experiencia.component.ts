@@ -16,6 +16,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./experiencia.component.css'],
 })
 export class ExperienciaComponent implements OnInit {
+  console = console;
   constructor(
     private datosExperiencia: ExperienciaService,
     private modalService: NgbModal
