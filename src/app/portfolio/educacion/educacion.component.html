@@ -1,6 +1,6 @@
-<section class="container-fluid bg-light " id="educacion">
+<section class="container-fluid bg-light educacion-container" id="educacion">
   <div>
-    <h2 class="mat-h2">Mi Educación</h2>
+    <h2 class="mat-h2 tx-grey">Mi Educación</h2>
     <div class="row" *ngIf="!authority">
       <div>
         <ul>
@@ -30,13 +30,13 @@
 
         <div class="col-md-9 align-items-center" style="padding-right: 2em">
           <a class="btn btn-info float-end" (click)="openAddFormModal()"><i class="fa-solid fa-plus"
-              style="color: white"></i></a>
+              style="color: var(--grey)"></i></a>
               <button class="float-end btn btn-success mx-4" (click)="guardarOrden()">Confirmar orden de elementos</button>
 
         </div>
    
       </div>
-      <ul cdkDropList class="lista-droppeable" (cdkDropListDropped)="drop($event)">
+      <ul cdkDropList class="lista-droppeable bg-light" (cdkDropListDropped)="drop($event)">
         <li class="row tarjeta caja-droppeable py-3 my-4" *ngFor="let elemento of miEducacion" cdkDragLockAxis="y"
           cdkDrag>
           <div class="lista-handler">
@@ -45,10 +45,10 @@
           <div class="col-md-2">
             <img class="logolateral" [alt]="elemento.curso" [src]="elemento.imgUrl" />
           </div>
-          <div class="col-md-10">
+          <div class="col-md-10 tx-grey">
             <div class="row" id="tituloTarjeta">
               <div class="col-md-6">
-                <h2 class="mat-h2">{{ elemento.curso }}</h2>
+                <h2 class="mat-h2 tx-grey">{{ elemento.curso }}</h2>
               </div>
 
               <div *ngIf="!authority" class="col-md-6 float-right">
@@ -84,7 +84,5 @@
       </ul>
 
     </div>
-
-
   </div>
 </section>

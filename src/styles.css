@@ -77,8 +77,7 @@ h1 {
 }
 h2 {
     font-size: 3.4rem;
-
-    color: white;
+    /* color: white; */
     font-weight: bold;
     margin-bottom: 5rem;
     text-align: center;
@@ -95,3 +94,19 @@ li{
     list-style: none;
 }
 
+.tx-grey{
+    color: var(--grey) !important;
+}
+.tx-white{
+    color: white;
+}
+
+.btn-info{
+    background-color: var(--gold)!important;
+    border-color: var(--gold)!important;
+    font-size: 1.3rem !important;
+}
+.btn-info:hover{
+    background-color: var(--gold-dark)!important;
+    border-color: var(--gold-dark)!important;
+}
