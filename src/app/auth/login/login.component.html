@@ -1,13 +1,12 @@
-<div class="header-intro theme-bg-primary text-white py-5 mt-2">
+<div class="header-intro  text-white py-5 mt-2 my-5">
   <div class="container">
-    <h2 class="page-heading mb-0">Login</h2>
   </div>
 </div>
 
 <div *ngIf="isLogged; else loggedOut">Bienvenido ADMIN!</div>
 
 <ng-template #loggedOut>
-  <div *ngIf="!isLogged" class="container py-3 mt-2">
+  <div *ngIf="!isLogged" class="container py-3 mt-2 login">
     <h5>Iniciar Sesión</h5>
     <form name="form" #f="ngForm" novalidate (ngSubmit)="onLogin()">
       <div class="form-group">
