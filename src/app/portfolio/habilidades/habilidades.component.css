@@ -3,13 +3,14 @@ los valores soportados son: 30  45  60  75  90 y 95.
 
 ej: <div class="pie-wrapper progress-45"> Pasara al 45 el progreso. (el texto se cambia aparte) */
 
+
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
-
+/* 
 html,
 body {
   background: #ecf0f1;
@@ -17,7 +18,12 @@ body {
   font-family: "Lato", Tahoma, Geneva, sans-serif;
   font-size: 16px;
   padding: 10px;
+} */
+
+.habilidades, .habilidad{
+  color: white;
 }
+
 
 .set-size {
   font-size: 10em;

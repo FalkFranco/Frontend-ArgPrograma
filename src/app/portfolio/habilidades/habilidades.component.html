@@ -1,13 +1,12 @@
-<!-- <div class="row container-fluid" id="habilidades">
-  <hr />
-  <div class="row" *ngIf="!authority">
+<div class="row container-fluid" id="skills">
+  <div class="row habilidades" *ngIf="!authority">
     <h2 class="mat-h2 float-start" style="margin-left:-1.4rem;">Mis Habilidades</h2>
   </div>
 
   <div *ngIf="authority === 'admin'">
     <div class="row">
       <div class="col-md-3">
-        <h2 class="mat-h2 float-start">Mis Habilidades</h2>
+        <h2 class="mat-h2 float-start habilidades ">Mis Habilidades</h2>
       </div>
 
       <div class="col-md-9 align-items-center" style="padding-right: 2em">
@@ -16,7 +15,7 @@
       </div>
     </div>
   </div>
-  <div class="row my-4">
+  <div class="row my-4 habilidad py-5">
     <div class="col-md-3" *ngFor="let elemento of miHabilidades">
       <div *ngIf="authority === 'admin'" class="float-right">
         <a (click)="openEditFormModal(elemento.id)">
@@ -39,9 +38,9 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
-<section id="skills" class="container">
+<!-- <section id="skills" class="container">
   <div class="row">
       <h2 class="tx-white">Skills</h2>
       <div class="mt-5 col-xl-7 col-xxl col-10 skills"> 
@@ -78,4 +77,4 @@
           <div class="points"></div>
       </div>
   </div>
-</section>
+</section> -->

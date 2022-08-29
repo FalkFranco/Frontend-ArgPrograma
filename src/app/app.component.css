@@ -20,6 +20,9 @@
     width: 14rem;
     margin-left: 2rem;
 }
+.l-text{
+    color: var(--grey);
+}
 
 @media (min-width: 1024px){
     .logo-ff {
